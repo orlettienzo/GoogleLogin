@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: black;
+    display: flex;
+    background-color: lightseagreen;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('../static/background.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: moveBackground 40s linear infinite alternate;
+}
+
+@keyframes moveBackground {
+    
+    from {
+        
+        background-position: 0% 50%; /* Posição inicial */
+        
+    }
+    
+    to {
+        
+        background-position: 100% 50%; /* Posição final */
+        
+    }
+    
+}
+img {
+    width: 100px;
+    height: auto;
+    border-radius: 30px;
+    transition: transform 0.2s ease-in-out;
+
+
+
+    
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    font-size: 24px;
+    padding: 40px 0px 10px 0px;
+}
+
+form {
+    background-color: #fffdfd;
+    border-radius: 10px;
+    padding: 20px 20px 10px 20px;
+
+
+
+
+}
+
+button {
+    color: white;
+    background-color: cornflowerblue;
+    border-radius: 22px;
+    border: none;
+    padding: 10px 10px 10px 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+
+
+
+
+
+
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    gap: 10px;
+    padding: 0px 0px 10px 0px;
+    font-size: 16px;
+
+}
+
+.lembrar {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 0px 0px 0px 0px;
+
+}
+
+.senhea-esquecida{
+
+    margin-top: 150px;
+
+}
